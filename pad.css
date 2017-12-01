@@ -8,7 +8,7 @@ h1 {
 }
 
 .header {
-    padding: 80px 0 0px;
+    padding: 30px 0 0px;
 }
 
 .middle {
@@ -18,7 +18,7 @@ h1 {
 .contact {
    font-family: 'Roboto Condensed', sans-serif !important;
    font-weight: 400;
-   padding: 26px 0px 0px;
+   padding: 30px 0px 0px;
    font-size: 12px;
    letter-spacing: 2px;
 }
@@ -31,7 +31,7 @@ h1 {
 .copyright {
     font-family: 'Roboto', sans-serif !important;
     font-weight: normal;
-    padding: 65px 0px 16px;
+    padding: 100px 0px 16px;
     letter-spacing: 0.5px;
     font-size: 9px;
 }
