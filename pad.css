@@ -24,14 +24,14 @@ h1 {
 }
 
 .img-fluid {
-    width: 485px;
+    width: 400px;
     height: auto;
 }
 
 .copyright {
     font-family: 'Roboto', sans-serif !important;
     font-weight: normal;
-    padding: 100px 0px 16px;
+    padding-bottom: 16px;
     letter-spacing: 0.5px;
     font-size: 9px;
 }
