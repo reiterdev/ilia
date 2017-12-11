@@ -1,6 +1,11 @@
+html {
+   overflow-y: scroll;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif !important;
     letter-spacing: 2px;
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -18,20 +23,28 @@ h1 {
 .contact {
    font-family: 'Roboto Condensed', sans-serif !important;
    font-weight: 400;
-   padding: 15px 0px 0px;
+   padding: 20px 0px 0px;
    font-size: 11px;
    letter-spacing: 1px;
 }
 
 .img-fluid {
-    width: 485px;
+    width: 300px;
     height: auto;
+    padding: 0px 20px;
 }
 
-.copyright {
+.navbar-nav {
+    display:inline-block;
+    float:none;
+    background-color: #fff;
+    padding: 5px 0px;
+}
+
+.copyright-text {
     font-family: 'Roboto', sans-serif !important;
     font-weight: normal;
-    padding-bottom: 1px;
+    padding: 4px 0px 1px;
     margin-bottom: 10px;
     letter-spacing: 0.5px;
     font-size: 9px;

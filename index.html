@@ -47,13 +47,10 @@
             </div>
 
             <!-- Copyright -->
-            <div class="row footer fixed-bottom">
-                <div class="col-sm">
-                    <p class="copyright">© 2017</p>
-                </div>
-            </div>
+            <nav class="navbar navbar-nav fixed-bottom">
+                <p class="copyright-text">© 2017</p>
+            </nav>
         </div>
-
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -64,8 +61,8 @@
     <script>
         $(document).ready(function () {
             $("#contact").click(function () {
-                $("#contact_p").fadeOut(800, function () {
-                    $("#contact_p").text(($("#contact_p").text() == 'CONTACT') ? 'CONTACT@ILIAREITER.COM' : 'CONTACT').fadeIn(800);
+                $("#contact_p").fadeOut(600, function () {
+                    $("#contact_p").text(($("#contact_p").text() == 'CONTACT') ? 'CONTACT@ILIAREITER.COM' : 'CONTACT').fadeIn(600);
                 })
             })
         });
