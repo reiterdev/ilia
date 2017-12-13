@@ -19,6 +19,8 @@
     <link href="desktop.css" rel="stylesheet">
     <link href="mobile.css" rel="stylesheet" media="screen and (max-width: 500px)">
     <link href="pad.css" rel="stylesheet" media="screen and (min-width: 501px) and (max-width: 900px)">
+    <link href="laptop.css" rel="stylesheet" media="screen and (min-width: 901px) and (max-width: 1400px)">
+
 
     <!-- Custom font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -28,7 +30,7 @@
             <!-- Header -->
             <div class="row header">
                 <div class="col-sm">
-                    <h1>ILIA REITER</h1>
+                    <h1><a class="name" href=".">ILIA REITER</a></h1>
                 </div>
             </div>
 
@@ -47,10 +49,11 @@
             </div>
 
             <!-- Copyright -->
-            <nav class="navbar navbar-nav fixed-bottom">
+            <!-- <nav class="navbar navbar-nav fixed-bottom">
                 <p class="copyright-text">© 2017</p>
-            </nav>
+            </nav> -->
         </div>
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -60,7 +63,7 @@
     <!-- Optional JavaScript -->
     <script>
         $(document).ready(function () {
-            $("#contact").click(function () {
+            $("#contact").one('click', function () {
                 $("#contact_p").fadeOut(600, function () {
                     $("#contact_p").text(($("#contact_p").text() == 'CONTACT') ? 'CONTACT@ILIAREITER.COM' : 'CONTACT').fadeIn(600);
                 })
