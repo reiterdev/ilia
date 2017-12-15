@@ -1,5 +1,5 @@
 html {
-   overflow-y: scroll;
+   /*overflow-y: scroll;*/
 }
 
 body {
@@ -22,6 +22,14 @@ h1 a.name:hover {
     text-decoration: none !important;
 }
 
+.modal {
+ overflow-y: auto;
+}
+
+.modal-open {
+ overflow: auto;
+}
+
 .header {
     padding: 35px 0px 12px;
 }
@@ -38,7 +46,7 @@ h1 a.name:hover {
 }
 
 #contact_p:hover {
-    cursor: default;
+    cursor: pointer;
 }
 
 .img-fluid {

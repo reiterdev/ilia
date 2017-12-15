@@ -21,6 +21,8 @@
     <link href="pad.css" rel="stylesheet" media="screen and (min-width: 501px) and (max-width: 900px)">
     <link href="laptop.css" rel="stylesheet" media="screen and (min-width: 901px) and (max-width: 1400px)">
 
+    <!-- Form styles -->
+    <link href="form.css" rel="stylesheet">
 
     <!-- Custom font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -30,7 +32,7 @@
             <!-- Header -->
             <div class="row header">
                 <div class="col-sm">
-                    <h1><a class="name" href=".">ILIA REITER</a></h1>
+                    <h1><a class="name" href="index.html">ILIA REITER</a></h1>
                 </div>
             </div>
 
@@ -48,6 +50,61 @@
                 </div>
             </div>
 
+            <!-- Link trigger modal -->
+            <div class="row contact">
+                <div id='contact' class="col-sm">
+                    <a class="contact" data-toggle="modal" data-target="#exampleModal">
+                        <p id="contact_p">CONTACT FORM</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                  <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">CONTACT ME</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div> -->
+
+                  <!-- Contact form -->
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="input_name" placeholder="NAME">
+                      </div>
+
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="input_email" placeholder="E-MAIL">
+                      </div>
+
+                      <div class="form-group">
+                        <textarea class="form-control" id="textarea_message" placeholder="MESSAGE" rows="3"></textarea>
+                      </div>
+
+                      <div class='form-inline'>
+                        <div class="form-group">
+                          <input type="submit" class="form-control" id="cancel" data-dismiss="modal" aria-label="Close" value="CANCEL">
+                          <input type="submit" class="form-control" id="submit" value="SEND">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+<!--
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- <button id="target" type="button" class="btn btn-warning">Send email</button> -->
+
             <!-- Copyright -->
             <!-- <nav class="navbar navbar-nav fixed-bottom">
                 <p class="copyright-text">© 2017</p>
@@ -60,12 +117,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
+    <!-- Send mail -->
+    <!-- <script src="https://smtpjs.com/v2/smtp.js"></script>
+    <script>
+    $(document).ready(function () {
+        $( "#target" ).click(function() {
+        Email.send("mike@iliareiter.com",
+                   "mike@iliareiter.com",
+                   "This is a TEST 01",
+                   "this is the body",
+                   {
+                       token: "2d18f613-1fd5-49c9-b993-17278e5a4a22",
+                       callback: function done(message) {alert("sent")}
+                   });
+        });
+    });
+    </script> -->
+
     <!-- Optional JavaScript -->
     <script>
         $(document).ready(function () {
             $("#contact").one('click', function () {
                 $("#contact_p").fadeOut(600, function () {
                     $("#contact_p").text(($("#contact_p").text() == 'CONTACT') ? 'CONTACT@ILIAREITER.COM' : 'CONTACT').fadeIn(600);
+                    $("#contact_p").css({'cursor': 'text'});
                 })
             })
         });
